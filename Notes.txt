@@ -1,0 +1,38 @@
+ mkdir 0_Programming
+  999  cd 0_Programming/
+ 1000  git clone https://github.com/dockersamples/node-bulletin-board.git
+ 1001  cd node-bulletin-board/
+ 1002  ls
+ 1003  echo $dockerId
+ 1004  export dockerId='greybrandon'
+ 1005  echo $dockerId
+ 1006  ls
+ 1007  ls -a
+ 1008  git branch
+ 1009  git branch -a
+ 1010  git checkout v1
+ 1011  git branch -a
+ 1012  docker image build --tag $dockerId/bb-app:v1 --file bulletin-board-app/Dockerfile ./bulletin-board-app
+ 1013  docker container run --detach --publish 8080:8080 $dockerId/bb-app:v1
+ 1014  docker container run --detach --publish 8087:8087 $dockerId/bb-app:v1
+ 1015  ip addr show
+ 1016  docker container run --detach --publish 8087:8087 $dockerId/bb-app:v1docker ps
+ 1017  docker ps
+ 1018  ls
+ 1019  docker container --stop 1407898a0075
+ 1020  docker container stop 1407898a0075
+ 1021  ls
+ 1022  vi bulletin-board-app/
+ 1023  vi bulletin-board-app/Dockerfile
+ 1024  ls bulletin-board-app/
+ 1025  cd bulletin-board-app/
+ 1026  vi server.js
+ 1027  docker images
+ 1028  cd ..
+ 1029  docker image build --tag $dockerId/bb-app:v1 --file bulletin-board-app/Dockerfile ./bulletin-board-app
+ 1030  docker container run --detach --publish 8087:8087 $docker/bb-app:v1
+ 1031  docker container run --detach --publish 8080:8080 $dockerId/bb-app:v1
+ 1032  docker container run --detach --publish 8087:8087 $dockerId/bb-app:v1
+ 1033  ip addr show
+ 1034  ls
+
